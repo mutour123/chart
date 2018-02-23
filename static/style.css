@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: gold;
+    line-height: 60px;
+    text-align: center;
+}
+.mianban-con{
+    display: flex;
+    height: 400px;
+}
+
+.chart{
+    flex-grow: 1;
+    padding: 10px;
+    background-color:sienna ;
+    overflow: auto;
+
+}
+
+.frinds{
+    width: 160px;
+    background-color: saddlebrown;
+    padding: 10px;
+}
+
+.input-con{
+    height: 40px;
+    border: 1px sienna solid;
+    padding: 10px;
+    display: flex;
+
+}
+
+.input-con > input{
+    flex-grow: 1;
+    outline: none;
+}
+
+.input-con > button{
+    width: 60px;
+    margin-left: 10px;
+}
+
+.head-img{
+    height: 30px;
+    border-radius: 100%;
+}
+
+.nick-name{
+    line-height: 30px;
+    vertical-align: top;
+    padding-right:10px;
+    color: #ffffff;
+
+}
+.chart-text-con{
+    margin: 0px;
+    padding: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 4px;
+    line-height: 30px;
+    min-width: 20px;
+    display:inline-block;
+    max-width: 70%;
+    background-color: cornflowerblue;
+
+}
+.chart-text{
+    margin-bottom: 10px;
+}
+
+.self{
+    text-align: right;
+}
+
+.self-div{
+    /*float: right;*/
+}
+.frinds > h5{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.frinds > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.welcome{
+    float: right;
+    line-height: 30px;
+    font-size: 12px;
+    color: cornflowerblue;
+}
+
+.welcome-user{
+    text-align: center;
+    height: 60px;
+    color: #eee;
+}
+
+.welcome-user span{
+    display: inline-block;
+    background-color: rgba(44,44,44,.4);
+    border-radius: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 12px;
+    line-height: 30px;
+
+}
+.pself{
+    text-align: left;
+}

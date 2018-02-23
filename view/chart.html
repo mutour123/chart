@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<% if(!user) { %>
+    <script>
+        window.location.href = 'http://127.0.0.1:3000';
+    </script>
+<% }else{ %>
+<header>
+    聊天室<span class="welcome" id="welcome"><%= user %></span>
+</header>
+<main>
+    <section class="mianban-con">
+        <section class="chart">
+            <div class="chart-text">
+                <div>
+                    <img class="head-img" src="http://thirdwx.qlogo.cn/mmopen/QRTaLgM6bICTcsLP2zoKrecQTY4OGzunvzr5DV3qo9A4aytwqZqsneYr6e4JcULuLMicKlN6ZBQR9iaMjZtISedFIHibD5ddHkB/132" alt="头像">
+                    <a class="nick-name" href="#">念念</a>
+                </div>
+                <p class="chart-text-con">这里是聊天记录</p>
+            </div>
+
+            <div class="chart-text self">
+                <div>
+                    <a class="nick-name" href="#">自己</a>
+                    <img class="self-div head-img" src="http://thirdwx.qlogo.cn/mmopen/QRTaLgM6bICTcsLP2zoKrecQTY4OGzunvzr5DV3qo9A4aytwqZqsneYr6e4JcULuLMicKlN6ZBQR9iaMjZtISedFIHibD5ddHkB/132" alt="头像">
+                </div>
+                <p class="chart-text-con">这里是聊天记录</p>
+            </div>
+
+            <div class="chart-text">
+                <div>
+                    <img class="head-img" src="http://thirdwx.qlogo.cn/mmopen/QRTaLgM6bICTcsLP2zoKrecQTY4OGzunvzr5DV3qo9A4aytwqZqsneYr6e4JcULuLMicKlN6ZBQR9iaMjZtISedFIHibD5ddHkB/132" alt="头像">
+                    <a class="nick-name" href="#">念念</a>
+                </div>
+                <p class="chart-text-con">这里是聊天记录这里是聊天记录这里是聊天记录这里是聊天记录这里是聊天记录这里是聊天记录这里是聊天记录这里是聊天记录这里是聊天记录这里是聊天记录这里是聊天记录</p>
+            </div>
+        </section>
+        <!--//这里显示用户列表-->
+        <aside class="frinds">
+            <h5>在线人数99</h5>
+            <ul>
+                <li>user1</li>
+                <li>user2</li>
+                <li>user3</li>
+            </ul>
+        </aside>
+    </section>
+    <section class="input-con">
+        <input id="msg" placeholder="请输入想说的话..." type="text">
+        <button id="sub">确定</button>
+    </section>
+</main>
+<% } %>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/jquery.js"></script>
+<script src="/index.js"></script>
+</body>
+</html>

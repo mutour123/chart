@@ -13,18 +13,19 @@ header{
     height: 400px;
 }
 
-.chart{
+.chart, .one{
     flex-grow: 1;
     padding: 10px;
     background-color:sienna ;
     overflow: auto;
-
 }
 
 .frinds{
-    width: 160px;
+    width: 200px;
     background-color: saddlebrown;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .input-con{
@@ -83,18 +84,27 @@ header{
 .self-div{
     /*float: right;*/
 }
+
 .frinds > h5{
     margin: 0;
-    margin-bottom: 10px;
+    height: 40px;
 }
 
-.frinds > ul{
+.frinds  ul{
     padding: 0;
     margin: 0;
     list-style: none;
     padding-left: 10px;
 }
+.frinds  ul li{
+    line-height: 24px;
+    cursor: pointer;
+    border-bottom: 1px #000000 solid;
+}
 
+.frinds  ul li:hover{
+    color:cornflowerblue;
+}
 .welcome{
     float: right;
     line-height: 30px;
@@ -120,4 +130,44 @@ header{
 }
 .pself{
     text-align: left;
+}
+
+.onlineList{
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.one{
+    padding: 0px;
+    display: none;
+    overflow: hidden;
+}
+
+.chartone{
+    padding: 10px;
+    overflow: auto;
+    height: calc(100% - 60px);
+}
+
+.usernameone{
+    text-align: center;
+    background-color: hotpink;
+    line-height: 40px;
+}
+
+.toBack{
+    background-color: rebeccapurple;
+    float: left;
+    width: 40px;
+    cursor: pointer;
+}
+
+.new-tip{
+    color: red;
+    background-color: hotpink;
+    float: right;
+    border-radius: 100%;
+    padding: 1px;
+    line-height: 16px;
+    font-size: 10px;
 }
